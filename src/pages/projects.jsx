@@ -3,7 +3,7 @@ import Spinner from '../components/spinner';
 import ErrorMessage from '../components/errormessage';
 
 // Change this to your own GitHub username
-const GITHUB_USERNAME = 'Hemangi92635';
+const GITHUB_USERNAME = 'Hemangi-026';
 
 function Projects() {
   // Practical 3 required state: data, loading, error
