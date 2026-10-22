@@ -1,7 +1,5 @@
 import { Link, NavLink } from 'react-router-dom';
 
-// NavBar receives dark mode state + setter as props from App.jsx
-// so the toggle button lives here but the state lives in App.
 function NavBar({ darkMode, setDarkMode }) {
   return (
     <nav className="navbar">
@@ -10,7 +8,6 @@ function NavBar({ darkMode, setDarkMode }) {
       </Link>
 
       <div className="navbar-links">
-        {/* Using <Link> / <NavLink> instead of <a> avoids full page reloads */}
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
@@ -23,12 +20,6 @@ function NavBar({ darkMode, setDarkMode }) {
           className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
         >
           Projects
-        </NavLink>
-        <NavLink
-          to="/tasks"
-          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
-        >
-          Tasks
         </NavLink>
         <NavLink
           to="/contact"

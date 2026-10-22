@@ -2,7 +2,7 @@ import Header from '../components/header';
 import About from '../components/about';
 import Skills from '../components/skills';
 
-const skillList = ['HTML', 'CSS', 'Git','C++', 'Python', 'MongoDB'];
+const skillList = ['HTML', 'CSS', 'Git', 'C++', 'Python', 'MongoDB'];
 
 function Home() {
   return (
